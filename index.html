@@ -1,0 +1,805 @@
+<!-- DEMO: remove noindex when site goes live -->
+<meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CopperLine Plumbing | Plumber Serving the Tampa Bay Area</title>
+<meta name="description" content="CopperLine Plumbing is a trusted local plumber serving the Tampa Bay Area. Plumbing repairs, water heaters, new water lines, water softeners, faucet &amp; toilet installation. Call (813) 555-0103.">
+<meta name="author" content="CopperLine Plumbing">
+<meta name="theme-color" content="#12296b">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="CopperLine Plumbing | Plumber Serving the Tampa Bay Area">
+<meta property="og:description" content="Trusted local plumber serving the Tampa Bay Area. Repairs, water heaters, water lines, softeners, faucet &amp; toilet installs. Call (813) 555-0103.">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://wilsonramstead.github.io/template-plumbing-3/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1760546120487-ccb54df9838c?w=1200&q=80&fm=jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CopperLine Plumbing | Tampa Bay Area Plumber">
+<meta name="twitter:description" content="Repairs, water heaters, water lines, softeners, faucet &amp; toilet installs. Call (813) 555-0103.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1760546120487-ccb54df9838c?w=1200&q=80&fm=jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Copse&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- LocalBusiness structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "CopperLine Plumbing",
+  "alternateName": "CopperLine Plumbing",
+  "image": "https://images.unsplash.com/photo-1760546120487-ccb54df9838c?w=1200&q=80&fm=jpg",
+  "url": "https://wilsonramstead.github.io/template-plumbing-3/",
+  "telephone": "+18135550103",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tampa",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Tampa Bay Area, FL" }
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:30",
+    "closes": "17:00"
+  }]
+}
+</script>
+
+<style>
+  :root{
+    --royal:#1b3f9c;
+    --royal-deep:#112a6b;
+    --royal-soft:#2c56c9;
+    --sky:#3f92d2;
+    --sky-ink:#175a8f;
+    --sand:#e7d9bd;
+    --sand-bg:#f6f0e2;
+    --cream:#f1ead9;
+    --paper:#fffdf9;
+    --ink:#17233d;
+    --muted:#566178;
+    --line:rgba(27,63,156,.14);
+    --line-strong:rgba(27,63,156,.24);
+    --shadow:0 20px 46px -22px rgba(17,42,107,.45);
+    --shadow-sm:0 8px 20px -12px rgba(17,42,107,.45);
+    --maxw:1170px;
+    --radius:14px;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:clip}
+  body{
+    margin:0;
+    font-family:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--sand-bg);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  p{margin:0;overflow-wrap:break-word}
+
+  h1,h2,h3,h4{
+    font-family:"Copse",Georgia,"Times New Roman",serif;
+    line-height:1.12;
+    margin:0;
+    font-weight:400;
+    color:var(--royal-deep);
+    overflow-wrap:break-word;
+  }
+  h2{font-size:clamp(1.95rem,4.4vw,3rem);letter-spacing:-.005em}
+  h3{font-size:1.26rem;line-height:1.2}
+  h1{letter-spacing:-.005em}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-left:clamp(20px,5vw,42px);padding-right:clamp(20px,5vw,42px)}
+  section{padding-top:clamp(62px,9vw,116px);padding-bottom:clamp(62px,9vw,116px)}
+
+  .eyebrow{
+    font-family:"Figtree",sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:.72rem;
+    font-weight:700;
+    color:var(--sky-ink);
+    margin-bottom:14px;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.6em;
+    font-family:"Figtree",sans-serif;font-weight:600;font-size:1rem;
+    padding:15px 26px;border-radius:11px;
+    text-decoration:none;cursor:pointer;border:0;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    line-height:1.1;min-width:0;
+  }
+  .btn svg{width:19px;height:19px;flex:none}
+  .btn-primary{background:var(--royal);color:#fff;box-shadow:var(--shadow-sm)}
+  .btn-primary:hover{background:var(--royal-deep);transform:translateY(-2px)}
+  .btn-ghost{background:rgba(255,255,255,.10);color:#fff;border:1.5px solid rgba(255,255,255,.65)}
+  .btn-ghost:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+  .btn .sub{display:block;font-size:.72rem;font-weight:600;letter-spacing:.03em;opacity:.85;line-height:1;margin-top:3px}
+  .btn.stack .txt{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
+
+  :focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px}
+
+  .skip{
+    position:absolute;left:-999px;top:0;background:var(--royal-deep);color:#fff;
+    padding:12px 18px;z-index:300;border-radius:0 0 10px 0;font-weight:600;text-decoration:none;
+  }
+  .skip:focus{left:0}
+
+  /* ---------- Header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:100;
+    background:rgba(246,240,226,.92);
+    backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}
+  .brand .mark{
+    width:44px;height:44px;flex:none;border-radius:12px;
+    background:var(--royal);display:grid;place-items:center;color:#fff;
+    box-shadow:inset 0 0 0 1.5px rgba(63,146,210,.5);
+  }
+  .brand .mark svg{width:25px;height:25px}
+  .brand .bt{min-width:0}
+  .brand b{font-family:"Copse",serif;font-weight:400;font-size:1.28rem;color:var(--royal-deep);letter-spacing:-.005em;line-height:1.05;display:block}
+  .brand span.tag{display:block;font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:3px}
+  .nav-links{display:flex;align-items:center;gap:26px;min-width:0}
+  .nav-links a.link{text-decoration:none;font-weight:500;color:var(--ink);font-size:.95rem}
+  .nav-links a.link:hover{color:var(--sky-ink)}
+  .call-btn{
+    display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+    background:var(--royal);color:#fff;font-weight:600;
+    padding:10px 17px;border-radius:10px;font-size:.95rem;white-space:nowrap;flex:none;
+    transition:background .18s ease,transform .18s ease;line-height:1.05;
+  }
+  .call-btn:hover{background:var(--royal-deep);transform:translateY(-1px)}
+  .call-btn svg{width:17px;height:17px;flex:none}
+  .call-btn .cn{display:flex;flex-direction:column;line-height:1}
+  .call-btn .cn small{font-size:.64rem;opacity:.9;font-weight:600;letter-spacing:.02em}
+  @media(max-width:940px){.nav-links a.link{display:none}}
+  @media(max-width:600px){
+    .call-btn .cn{display:none}
+    .call-btn{padding:11px 13px}
+    .call-btn svg{width:19px;height:19px}
+  }
+  @media(max-width:560px){
+    .brand b{font-size:1.02rem;white-space:normal}
+    .brand span.tag{white-space:normal}
+  }
+  @media(max-width:430px){
+    .brand .mark{width:40px;height:40px}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;display:flex;align-items:center;color:#fff;overflow:hidden;min-height:min(90vh,780px)}
+  .hero-bg{position:absolute;inset:0;z-index:-2}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero::after{
+    content:"";position:absolute;inset:0;z-index:-1;
+    background:
+      linear-gradient(102deg, rgba(17,42,107,.95) 0%, rgba(17,42,107,.82) 44%, rgba(17,42,107,.4) 100%),
+      linear-gradient(0deg, rgba(17,42,107,.55), rgba(17,42,107,0) 44%);
+  }
+  .hero .wrap{padding-top:74px;padding-bottom:74px}
+  .hero-inner{max-width:730px}
+  .badge-since{
+    display:inline-flex;align-items:center;gap:9px;
+    background:rgba(63,146,210,.2);border:1px solid rgba(63,146,210,.6);
+    color:#cfe6f7;font-weight:700;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;
+    padding:7px 14px;border-radius:999px;
+  }
+  .badge-since svg{width:15px;height:15px}
+  .hero h1{
+    color:#fff;font-weight:400;
+    font-size:clamp(2.5rem,6.4vw,4.5rem);
+    letter-spacing:-.01em;margin:18px 0 0;line-height:1.04;
+  }
+  .hero h1 em{font-style:italic;color:#8ec7ef}
+  .hero .sub{font-size:clamp(1.05rem,2.2vw,1.26rem);margin-top:20px;max-width:46ch;color:rgba(255,255,255,.92)}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+  .hero-note{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:26px;font-size:.92rem;color:rgba(255,255,255,.9)}
+  .hero-note .stars{color:#8ec7ef;letter-spacing:1px}
+  .hero-note .dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.4)}
+  .hero-note .live{display:inline-flex;align-items:center;gap:7px;font-weight:600}
+  .hero-note .live .pulse{width:9px;height:9px;border-radius:50%;background:#4fd08a;box-shadow:0 0 0 4px rgba(79,208,138,.25)}
+
+  /* ---------- Trust bar ---------- */
+  .trust{background:var(--royal-deep);color:#fff;padding:0}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding-top:24px;padding-bottom:24px}
+  .trust-item{display:flex;align-items:center;gap:13px;padding:6px 10px;min-width:0}
+  .trust-item svg{width:26px;height:26px;flex:none;color:#8ec7ef}
+  .trust-item b{display:block;font-size:1rem;font-weight:600;line-height:1.14;font-family:"Copse",serif}
+  .trust-item small{display:block;color:rgba(255,255,255,.72);font-size:.8rem}
+  .trust-item .stars{color:#8ec7ef;font-size:.95rem;letter-spacing:1px}
+  @media(max-width:760px){.trust .wrap{grid-template-columns:repeat(2,1fr);gap:16px}}
+  @media(max-width:400px){.trust .wrap{grid-template-columns:1fr}}
+
+  /* ---------- Section heads ---------- */
+  .sec-head{max-width:680px;margin-bottom:50px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head p{color:var(--muted);margin-top:16px;font-size:1.08rem}
+
+  /* ---------- Services ---------- */
+  .grid{display:grid;gap:20px}
+  .services .grid{grid-template-columns:repeat(3,1fr)}
+  .card{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px 28px;box-shadow:var(--shadow-sm);min-width:0;
+    transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line-strong)}
+  .card .ico{
+    width:54px;height:54px;border-radius:13px;display:grid;place-items:center;
+    background:var(--cream);color:var(--royal);margin-bottom:18px;
+    box-shadow:inset 0 0 0 1px var(--line);
+  }
+  .card .ico svg{width:29px;height:29px}
+  .card h3{margin-bottom:9px}
+  .card p{color:var(--muted);font-size:.98rem}
+  .card ul{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
+  .card ul li{font-size:.78rem;font-weight:600;color:var(--sky-ink);background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:4px 11px}
+  @media(max-width:920px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:580px){.services .grid{grid-template-columns:1fr}}
+
+  /* ---------- Why ---------- */
+  .why{background:var(--cream)}
+  .why-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:clamp(32px,6vw,72px);align-items:center}
+  .why-copy{min-width:0}
+  .why-media{position:relative;min-width:0}
+  .why-media img{border-radius:var(--radius);box-shadow:var(--shadow);width:100%;height:100%;max-height:540px;object-fit:cover}
+  .why-media .float{
+    position:absolute;left:-12px;bottom:-18px;background:var(--paper);
+    border-radius:14px;padding:15px 20px;box-shadow:var(--shadow);border:1px solid var(--line);
+    display:flex;align-items:center;gap:13px;max-width:calc(100% - 24px);
+  }
+  .why-media .float .yr{font-family:"Copse",serif;font-weight:400;font-size:1.8rem;color:var(--royal);line-height:1}
+  .why-media .float small{color:var(--muted);font-size:.8rem;line-height:1.3;display:block}
+  .why-list{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:2px}
+  .why-list li{display:flex;gap:16px;padding:20px 0;border-top:1px solid var(--line);min-width:0}
+  .why-list li:first-child{border-top:0}
+  .why-list .n{
+    width:46px;height:46px;flex:none;border-radius:12px;background:var(--royal);color:#fff;
+    display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(63,146,210,.45);
+  }
+  .why-list .n svg{width:23px;height:23px}
+  .why-list h3{font-size:1.14rem;margin-bottom:5px}
+  .why-list p{color:var(--muted);font-size:.97rem}
+  @media(max-width:840px){.why-grid{grid-template-columns:1fr}.why-media{order:-1;max-width:560px}}
+
+  /* ---------- Tagline divider ---------- */
+  .divider{position:relative;color:#fff;overflow:hidden;text-align:center;padding-top:clamp(56px,8vw,92px);padding-bottom:clamp(56px,8vw,92px)}
+  .divider .bg{position:absolute;inset:0;z-index:-2}
+  .divider .bg img{width:100%;height:100%;object-fit:cover}
+  .divider::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(17,42,107,.9),rgba(17,42,107,.92))}
+  .divider .kicker{font-family:"Figtree";text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:700;color:#8ec7ef;margin-bottom:16px}
+  .divider .flush{
+    font-family:"Copse",serif;font-style:italic;font-weight:400;color:#fff;
+    font-size:clamp(1.7rem,5vw,3rem);line-height:1.18;letter-spacing:-.005em;margin:0 auto;max-width:20ch;
+  }
+  .divider .flush b{color:#8ec7ef;font-style:italic;font-weight:400}
+  .divider small{display:block;margin-top:18px;color:rgba(255,255,255,.72);font-size:.9rem;letter-spacing:.02em}
+
+  /* ---------- Work / gallery ---------- */
+  .work .sec-head{margin-bottom:44px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gallery figure{margin:0;position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);aspect-ratio:4/3;min-width:0}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .gallery figure:hover img{transform:scale(1.06)}
+  .gallery figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:34px 16px 14px;
+    font-size:.9rem;font-weight:600;color:#fff;
+    background:linear-gradient(0deg,rgba(17,42,107,.86),rgba(17,42,107,0));
+  }
+  @media(max-width:820px){.gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.gallery{grid-template-columns:1fr}}
+
+  /* ---------- Testimonials ---------- */
+  .quotes{background:var(--sand-bg)}
+  .quotes .grid{grid-template-columns:repeat(3,1fr)}
+  .quote{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px 26px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:14px;min-width:0;
+  }
+  .quote .stars{color:#e0a838;letter-spacing:2px;font-size:1.05rem}
+  .quote blockquote{margin:0;font-size:1.01rem;color:var(--ink);line-height:1.6}
+  .quote figcaption{margin-top:auto;display:flex;align-items:center;gap:12px;font-size:.92rem}
+  .quote .av{
+    width:42px;height:42px;flex:none;border-radius:50%;background:var(--royal);color:#fff;
+    display:grid;place-items:center;font-weight:700;font-family:"Copse",serif;font-size:1.05rem;
+  }
+  .quote figcaption b{font-weight:600;display:block;line-height:1.2}
+  .quote figcaption span.role{color:var(--muted);font-size:.8rem}
+  @media(max-width:920px){.quotes .grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:620px){.quotes .grid{grid-template-columns:1fr}}
+
+  /* ---------- Area / hours ---------- */
+  .area-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,52px);align-items:stretch}
+  .area-grid>*{min-width:0}
+  .addr-card{
+    background:var(--royal-deep);color:#fff;border-radius:var(--radius);padding:clamp(28px,4vw,42px);
+    box-shadow:var(--shadow);position:relative;overflow:hidden;display:flex;flex-direction:column;
+  }
+  .addr-card h3{color:#fff;font-size:1.5rem;margin-bottom:6px}
+  .addr-card>p{color:rgba(255,255,255,.82)}
+  .pin{display:flex;gap:14px;align-items:flex-start;margin-top:22px}
+  .pin svg{width:28px;height:28px;flex:none;color:#8ec7ef;margin-top:2px}
+  .pin address{font-style:normal;line-height:1.55}
+  .pin address a{color:#8ec7ef;text-decoration:none;font-weight:600}
+  .pin address a:hover{text-decoration:underline}
+  .addr-card .maparea{
+    margin-top:24px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.18);
+    background:
+      radial-gradient(circle at 32% 42%, rgba(63,146,210,.3), transparent 46%),
+      repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 1px, transparent 1px 26px),
+      repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, transparent 1px 26px),
+      var(--royal);
+    height:150px;position:relative;
+  }
+  .maparea .dot{position:absolute;left:50%;top:54%;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center;gap:4px}
+  .maparea .dot svg{width:34px;height:34px;color:#8ec7ef;filter:drop-shadow(0 4px 6px rgba(0,0,0,.4))}
+  .maparea .dot b{font-size:.76rem;color:#fff;background:rgba(17,42,107,.75);padding:2px 8px;border-radius:6px;white-space:nowrap;font-family:"Figtree"}
+  .info-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(26px,4vw,40px);box-shadow:var(--shadow-sm)}
+  .open-banner{
+    display:flex;align-items:center;gap:12px;background:var(--royal);color:#fff;
+    border-radius:12px;padding:16px 18px;margin-bottom:8px;
+  }
+  .open-banner .pulse{width:12px;height:12px;flex:none;border-radius:50%;background:#4fd08a;box-shadow:0 0 0 5px rgba(79,208,138,.22)}
+  .open-banner.closed .pulse{background:#f0a04b;box-shadow:0 0 0 5px rgba(240,160,75,.22)}
+  .open-banner b{font-family:"Copse",serif;font-size:1.22rem;line-height:1.05;display:block}
+  .open-banner small{color:rgba(255,255,255,.82);font-size:.82rem}
+  .hours{list-style:none;margin:20px 0 0;padding:0}
+  .hours li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:.97rem}
+  .hours li:first-child{border-top:0}
+  .hours li.today{color:var(--sky-ink);font-weight:700}
+  .hours li .hv{color:var(--ink);font-weight:600}
+  .hours li.today .hv{color:var(--sky-ink)}
+  .hours li .closed{color:var(--muted);font-weight:600}
+  .areas-served{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+  .areas-served span{background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:.82rem;color:var(--muted);font-weight:500}
+  @media(max-width:840px){.area-grid{grid-template-columns:1fr}}
+
+  /* ---------- CTA band ---------- */
+  .cta-band{position:relative;color:#fff;text-align:center;overflow:hidden}
+  .cta-band .bg{position:absolute;inset:0;z-index:-2}
+  .cta-band .bg img{width:100%;height:100%;object-fit:cover}
+  .cta-band::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(17,42,107,.9),rgba(17,42,107,.93))}
+  .cta-band h2{color:#fff;font-size:clamp(2rem,5vw,3.3rem)}
+  .cta-band p{color:rgba(255,255,255,.88);font-size:1.1rem;margin:16px auto 0;max-width:48ch}
+  .cta-band .btn{margin-top:30px;font-size:1.1rem;padding:18px 34px}
+  .cta-phone{display:inline-block;font-family:"Copse",serif;font-size:clamp(1.7rem,4vw,2.4rem);margin-top:20px;color:#8ec7ef;text-decoration:none}
+  .cta-phone:hover{text-decoration:underline}
+  .cta-band .free{margin-top:14px;font-size:.9rem;color:rgba(255,255,255,.74);letter-spacing:.03em}
+
+  /* ---------- Footer ---------- */
+  footer.site{background:#0e2258;color:rgba(255,255,255,.82);padding-top:64px;padding-bottom:56px}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px}
+  .foot-grid>*{min-width:0}
+  .foot-brand .brand b{color:#fff}
+  .foot-brand .brand .tag{color:rgba(255,255,255,.5)}
+  .foot-flush{
+    font-family:"Copse",serif;font-style:italic;font-weight:400;color:#8ec7ef;
+    font-size:1.14rem;margin-top:20px;line-height:1.35;
+  }
+  .foot-brand p.desc{margin-top:12px;max-width:36ch;font-size:.92rem;color:rgba(255,255,255,.62)}
+  footer.site h4{font-family:"Figtree",sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;color:rgba(255,255,255,.55);margin:0 0 14px;font-weight:700}
+  footer.site a{color:rgba(255,255,255,.85);text-decoration:none}
+  footer.site a:hover{color:#fff;text-decoration:underline}
+  .foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.93rem}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.83rem;color:rgba(255,255,255,.55)}
+  .foot-bottom a{color:rgba(255,255,255,.72)}
+  @media(max-width:720px){.foot-grid{grid-template-columns:1fr 1fr}.foot-brand{grid-column:1/-1}}
+  @media(max-width:460px){.foot-grid{grid-template-columns:1fr}}
+
+  /* ---------- Reveal ---------- */
+  .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js .reveal{opacity:1;transform:none;transition:none}
+    *{transition:none!important;animation:none!important}
+  }
+</style>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="CopperLine Plumbing home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/><path d="M12 15.5a2.5 2.5 0 0 1-2.5-2.5"/></svg>
+      </span>
+      <span class="bt"><b>CopperLine Plumbing</b><span class="tag">Serving the Tampa Bay Area</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#why">Why Us</a>
+      <a class="link" href="#reviews">Reviews</a>
+      <a class="link" href="#contact">Hours &amp; Area</a>
+      <a class="call-btn" href="tel:+18135550103" aria-label="Call CopperLine Plumbing at (813) 555-0103">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+        <span class="cn">(813) 555-0103<small>Tap to call</small></span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <span id="top"></span>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1760546120487-ccb54df9838c?w=1900&q=80&auto=format&fit=crop" alt="">
+    </div>
+    <div class="wrap">
+      <div class="hero-inner">
+        <span class="badge-since">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Serving the Tampa Bay Area
+        </span>
+        <h1>Plumbing done right &mdash;<br><em>on time and tidy.</em></h1>
+        <p class="sub">From repairs and water heaters to new water lines, softeners and fixtures, CopperLine Plumbing shows up on time, does professional work and cleans up when the job is done.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary stack" href="tel:+18135550103">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+            <span class="txt">Call (813) 555-0103<span class="sub">Mon&ndash;Fri, 8:30 AM &ndash; 5 PM</span></span>
+          </a>
+          <a class="btn btn-ghost" href="#services">See Our Services</a>
+        </div>
+        <p class="hero-note">
+          <span><span class="stars" aria-hidden="true">★★★★★</span> <strong>Five-star service</strong> from local homeowners</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="live"><span class="pulse" aria-hidden="true"></span> Local, Tampa Bay plumber</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST BAR ============ -->
+  <section class="trust" aria-label="Why the Tampa Bay Area trusts CopperLine Plumbing">
+    <div class="wrap">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 2.9 6 6.6.6-5 4.4 1.5 6.4L12 16.5 6 19.4l1.5-6.4-5-4.4L9 8Z"/></svg>
+        <div><b>Five-Star <span class="stars" aria-hidden="true">★</span> Service</b><small>Loved by local homeowners</small></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><b>Local to Tampa Bay</b><small>Serving the whole bay area</small></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div><b>On Time, Every Time</b><small>Shows up when we say we will</small></div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><b>Neat &amp; Tidy Work</b><small>We clean up when we're done</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services" aria-labelledby="services-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2 id="services-h">One local crew for the whole job.</h2>
+        <p>From a quick repair to a new water line, hot water heater and softener system, CopperLine Plumbing handles it &mdash; and when the work calls for it, the whole crew shows up to tackle it.</p>
+      </div>
+      <div class="grid">
+
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5a3.5 3.5 0 0 0-4.8 4.8l-6 6a1.6 1.6 0 0 0 2.3 2.3l6-6a3.5 3.5 0 0 0 4.8-4.8l-2.2 2.2-2-2 2.1-2.5Z"/></svg></div>
+          <h3>Plumbing Repairs</h3>
+          <p>Leaks, drips, running toilets and worn-out fittings fixed properly the first time &mdash; the everyday plumbing work local homes count on.</p>
+          <ul><li>Leaks &amp; drips</li><li>Fittings &amp; valves</li><li>Everyday fixes</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="4"/><path d="M9 3V2"/><path d="M15 3V2"/><path d="M10 11h4"/><circle cx="12" cy="15.5" r="1.6"/></svg></div>
+          <h3>Water Heaters</h3>
+          <p>Repair and replacement of hot water heaters, sized and installed right so you get dependable hot water again without the runaround.</p>
+          <ul><li>Repair &amp; replace</li><li>New installation</li><li>Sized for your home</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v6a4 4 0 0 0 4 4h6"/><path d="M14 10h6v6a4 4 0 0 1-4 4H8"/><path d="M14 7v6"/><path d="M17 7v6"/></svg></div>
+          <h3>New Water Lines</h3>
+          <p>Running a new water line into the house? Our crew handles the whole job &mdash; from the main to the fixtures &mdash; cleanly and correctly.</p>
+          <ul><li>New line into the house</li><li>Repipes &amp; reroutes</li><li>Whole-crew jobs</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s5 5 5 9a5 5 0 0 1-10 0c0-4 5-9 5-9Z"/><path d="M9.5 13a2.5 2.5 0 0 0 2.5 2.5"/></svg></div>
+          <h3>Water Softener Systems</h3>
+          <p>Hard Florida water is tough on plumbing and fixtures. We install softener systems that protect your pipes and give you better water throughout the home.</p>
+          <ul><li>Softener installation</li><li>Better home water</li><li>Protects your plumbing</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h4l3-9 4 12 2-6h5"/><circle cx="8" cy="6" r="2.4"/></svg></div>
+          <h3>Faucet &amp; Toilet Installation</h3>
+          <p>New faucets and toilets installed and running right &mdash; even when they have to work with older, builder-grade plumbing behind the wall.</p>
+          <ul><li>Faucet installs</li><li>Toilet installs</li><li>Fixture upgrades</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-3Z"/><path d="M6 12V6a2 2 0 0 1 2-2h1"/><path d="M9 6.5h.01"/><path d="M7 19l-1 2"/><path d="M18 19l1 2"/></svg></div>
+          <h3>Tub &amp; Shower Updates</h3>
+          <p>Refresh a dated tub or shower with updated fixtures and valves &mdash; clean, careful work that leaves the bathroom better than we found it.</p>
+          <ul><li>Tub &amp; shower fixtures</li><li>Valve updates</li><li>Fixture swaps</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY ============ -->
+  <section class="why" id="why" aria-labelledby="why-h">
+    <div class="wrap why-grid">
+      <div class="why-copy reveal">
+        <p class="eyebrow">Why neighbors call us back</p>
+        <h2 id="why-h">Professional, polite &mdash; and always shows up on time.</h2>
+        <p style="color:var(--muted);margin-top:16px;font-size:1.06rem">Families across the Tampa Bay Area call CopperLine Plumbing because the work is done the right way: on time, done neatly, and cleaned up when it's finished. It's why neighbors keep calling us back.</p>
+        <ul class="why-list">
+          <li>
+            <span class="n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><h3>On time &amp; competitively priced</h3><p>"They always show up on time. Very competitive price and the workers are polite and courteous." That's how our customers describe us.</p></div>
+          </li>
+          <li>
+            <span class="n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div><h3>Neat, careful, cleaned up</h3><p>Professional, kind and neat with the work &mdash; and everything cleaned up when the job is done. We treat your home like it's our own.</p></div>
+          </li>
+          <li>
+            <span class="n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <div><h3>The whole crew for big jobs</h3><p>New water line, hot water heater and softener system all at once? The whole crew shows up and tackles the job together, start to finish.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="why-media reveal">
+        <img src="https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=900&q=80&auto=format&fit=crop" loading="lazy" alt="Bright, modern kitchen with a stainless faucet over a clean island sink">
+        <div class="float">
+          <span class="yr">★★★★★</span>
+          <div><small>Trusted by<br><b>local homeowners</b></small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TAGLINE DIVIDER ============ -->
+  <section class="divider" aria-label="What customers tell us">
+    <div class="bg" aria-hidden="true"><img loading="lazy" src="https://images.unsplash.com/photo-1652662700928-5a4685e87d64?w=1600&q=80&auto=format&fit=crop" alt=""></div>
+    <div class="wrap">
+      <p class="kicker">In our customers' words</p>
+      <p class="flush">"Polite, courteous, and <b>neat with the work</b> &mdash; cleaned everything up when done."</p>
+      <small>Trusted plumbing across the Tampa Bay Area.</small>
+    </div>
+  </section>
+
+  <!-- ============ WORK / GALLERY ============ -->
+  <section class="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">The work we do</p>
+        <h2 id="work-h">Fixtures, heaters &amp; the lines behind them.</h2>
+        <p>From the faucets and toilets you see to the water lines and heaters you don't, we keep Tampa Bay homes running &mdash; and leave the job site tidy.</p>
+      </div>
+      <div class="gallery">
+        <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1599615381612-7bcc78cfd851?w=800&q=80&auto=format&fit=crop" alt="Stainless steel gooseneck faucet over a clean kitchen sink with butcher-block counter"><figcaption>Plumbing repairs</figcaption></figure>
+        <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1594233078955-e1f73a02ebb2?w=800&q=80&auto=format&fit=crop" alt="Wall-mounted water heater tank installed in a home"><figcaption>Water heaters</figcaption></figure>
+        <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1538474705339-e87de81450e8?w=800&q=80&auto=format&fit=crop" alt="Runs of plumbing water supply pipes and fittings"><figcaption>New water lines</figcaption></figure>
+        <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1721394746944-2c917dd90b36?w=800&q=80&auto=format&fit=crop" alt="Double-sink bathroom vanity with granite counter and large mirror"><figcaption>Faucet &amp; fixture installs</figcaption></figure>
+        <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1569597967185-cd6120712154?w=800&q=80&auto=format&fit=crop" alt="Clean white wall-hung toilet in a tiled bathroom"><figcaption>Toilet installation</figcaption></figure>
+        <figure class="reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1760546120487-ccb54df9838c?w=800&q=80&auto=format&fit=crop" alt="Modern bathroom with a glass walk-in shower and freestanding tub"><figcaption>Tub &amp; shower updates</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="quotes" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">What customers say</p>
+        <h2 id="rev-h">Neighbors, in their own words.</h2>
+        <p>A few of the five-star reviews from customers across the Tampa Bay Area.</p>
+      </div>
+      <div class="grid">
+
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>"They always show up on time. Very competitive price and the crew is polite and courteous — professional, kind and neat with the work. Cleaned everything up when done."</blockquote>
+          <figcaption><span class="av" aria-hidden="true">R</span><span><b>Rachel D.</b><span class="role">Five-star review</span></span></figcaption>
+        </figure>
+
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>"We needed a new water line into the house, a new hot water heater and a softener system. The whole crew showed up and tackled the job!"</blockquote>
+          <figcaption><span class="av" aria-hidden="true">K</span><span><b>Kevin M.</b><span class="role">Five-star review</span></span></figcaption>
+        </figure>
+
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>"Thank you for installing my beautiful new faucets and toilets&hellip; and understanding the 20-year-old builder grade plumbing!"</blockquote>
+          <figcaption><span class="av" aria-hidden="true">D</span><span><b>Denise A.</b><span class="role">Five-star review</span></span></figcaption>
+        </figure>
+
+        <figure class="quote reveal" style="background:var(--royal-deep);color:#fff;border-color:transparent;justify-content:center;align-items:flex-start">
+          <div class="stars" aria-hidden="true" style="color:#8ec7ef">★★★★★</div>
+          <blockquote style="color:#fff;font-family:'Copse',serif;font-size:1.35rem;line-height:1.28">Five-star service, <strong>on every job</strong>, for neighbors across the bay.</blockquote>
+          <figcaption style="color:rgba(255,255,255,.82)"><span>On time, polite, and neat with every job.</span></figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AREA / HOURS ============ -->
+  <section id="contact" aria-labelledby="area-h">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-bottom:42px">
+        <p class="eyebrow">Hours &amp; service area</p>
+        <h2 id="area-h">Serving the Tampa Bay Area.</h2>
+      </div>
+      <div class="area-grid">
+
+        <div class="addr-card reveal">
+          <h3>CopperLine Plumbing</h3>
+          <p>Give us a call and we'll get you on the schedule &mdash; reach us directly by phone.</p>
+          <div class="pin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address>
+              Serving the Tampa Bay Area<br>
+              <a href="tel:+18135550103">(813) 555-0103</a>
+            </address>
+          </div>
+          <div class="maparea" aria-hidden="true">
+            <div class="dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <b>Tampa Bay, FL</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="open-banner" id="open-banner">
+            <span class="pulse" aria-hidden="true"></span>
+            <span><b id="open-title">Open Today</b><small id="open-sub">Mon&ndash;Fri, 8:30 AM &ndash; 5:00 PM</small></span>
+          </div>
+          <ul class="hours" aria-label="Hours of operation">
+            <li data-day="1"><span>Monday</span><span class="hv">8:30 AM &ndash; 5:00 PM</span></li>
+            <li data-day="2"><span>Tuesday</span><span class="hv">8:30 AM &ndash; 5:00 PM</span></li>
+            <li data-day="3"><span>Wednesday</span><span class="hv">8:30 AM &ndash; 5:00 PM</span></li>
+            <li data-day="4"><span>Thursday</span><span class="hv">8:30 AM &ndash; 5:00 PM</span></li>
+            <li data-day="5"><span>Friday</span><span class="hv">8:30 AM &ndash; 5:00 PM</span></li>
+            <li data-day="6"><span>Saturday</span><span class="closed">Closed</span></li>
+            <li data-day="0"><span>Sunday</span><span class="closed">Closed</span></li>
+          </ul>
+          <p class="eyebrow" style="margin:26px 0 0">Areas we serve</p>
+          <div class="areas-served">
+            <span>Tampa</span><span>St. Petersburg</span><span>Clearwater</span><span>Brandon</span><span>Wesley Chapel</span><span>Tampa Bay Area</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band" aria-labelledby="cta-h">
+    <div class="bg" aria-hidden="true"><img loading="lazy" src="https://images.unsplash.com/photo-1753605788101-04d1e653e74a?w=1600&q=80&auto=format&fit=crop" alt=""></div>
+    <div class="wrap">
+      <h2 id="cta-h">Got a plumbing job? Give CopperLine a call.</h2>
+      <p>Whether it's a repair you've been putting off or a water heater, water line or softener install, we're a local crew that shows up on time and does the work right.</p>
+      <a class="btn btn-primary" href="tel:+18135550103">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>
+        Call CopperLine Plumbing
+      </a>
+      <a class="cta-phone" href="tel:+18135550103">(813) 555-0103</a>
+      <p class="free">Mon&ndash;Fri, 8:30 AM &ndash; 5:00 PM · Serving the Tampa Bay Area</p>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11Z"/><path d="M12 15.5a2.5 2.5 0 0 1-2.5-2.5"/></svg>
+          </span>
+          <span class="bt"><b>CopperLine Plumbing</b><span class="tag">Serving the Tampa Bay Area</span></span>
+        </div>
+        <p class="foot-flush">"Polite, courteous, and neat with the work."</p>
+        <p class="desc">Trusted local plumbing for the Tampa Bay Area &mdash; repairs, water heaters, water lines, softeners and fixtures.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18135550103">(813) 555-0103</a></li>
+          <li>Serving the Tampa Bay Area</li>
+          <li>Mon&ndash;Fri · 8:30 AM &ndash; 5:00 PM</li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Plumbing Repairs</a></li>
+          <li><a href="#services">Water Heaters</a></li>
+          <li><a href="#services">New Water Lines</a></li>
+          <li><a href="#services">Water Softener Systems</a></li>
+          <li><a href="#services">Faucet &amp; Toilet Installation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> CopperLine Plumbing. All rights reserved.</span>
+      <span>Website by <a href="https://wilsoninnovations.net" target="_blank" rel="noopener">Wilson Innovations</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Enable JS-only reveal styling
+  document.documentElement.classList.add('js');
+
+  // Current year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Highlight today's hours row + set open/closed banner (Mon-Fri 8:30-17:00)
+  (function(){
+    var now = new Date();
+    var day = now.getDay(); // 0 Sun ... 6 Sat
+    var li = document.querySelector('.hours li[data-day="'+day+'"]');
+    if(li){ li.classList.add('today'); }
+
+    var mins = now.getHours()*60 + now.getMinutes();
+    var isWeekday = day >= 1 && day <= 5;
+    var open = isWeekday && mins >= (8*60+30) && mins < (17*60);
+    var banner = document.getElementById('open-banner');
+    var title = document.getElementById('open-title');
+    var sub = document.getElementById('open-sub');
+    if(!banner) return;
+    if(open){
+      banner.classList.remove('closed');
+      title.textContent = 'Open Now';
+      sub.textContent = 'Closes 5:00 PM · Mon–Fri';
+    } else {
+      banner.classList.add('closed');
+      title.textContent = 'Currently Closed';
+      sub.textContent = 'Open Mon–Fri, 8:30 AM – 5:00 PM';
+    }
+  })();
+
+  // Scroll reveal (respects prefers-reduced-motion)
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){
+      els.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
